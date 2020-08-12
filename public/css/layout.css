@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+
+/* Navbar section */
+
+.navbar-section {
+    background-color:slateblue;
+    width: 100vw;
+    height: 55px;
+    box-sizing: border-box;
+  }
+   .navbar-section span.side-bar-button{
+    margin: .5em 1em;
+    float: left;
+  }
+  .navbar-section span.side-bar-button i{
+    font-size: 2em;
+    color: white;
+  }
+  .navbar-section ul {
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+   .navbar-section ul li{
+    margin: 0;
+    padding: 0 10px;
+  }
+  nav.navbars{
+    background-color: slateblue;
+    color: white;
+   padding: 0 2em;
+    width: 95vw;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+  }
+ 
+  nav.navbars .logo {
+    font-size: 2em;
+    padding: 5px;
+    float: left;
+  }
+  nav.navbars .logo a{
+    text-decoration: none;
+    color: white;
+  }
+  nav.navbars .navbar-navs {
+   float: right;
+  }
+  nav.navbars .navbar-navs i{
+    font-size: 25px;
+    margin: 0 5px;
+  }
+  nav.navbars .navbar-navs li{
+    display: inline-flex;
+  }
+  nav.navbars .navbar-navs li a{
+    color: white;
+    margin: 0 ;
+    text-decoration: none;
+    padding: .8vw;
+    font-size: 1.4em;
+  }
+  nav.navbars .navbar-navs li a:hover{
+    background-color: azure;
+    transition-duration: 0.6s;
+    color: dodgerblue;
+  }
+  nav.navbars .navbar-search-form {
+      width: 30%;
+      margin: 0 0 0 2rem;
+  }
+  
+  .sidebar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    background-color: slateblue;
+    overflow-x: hidden;
+    opacity: 0.9;
+    transition-duration: 0.6s;
+    padding: .5rem 0 0 0;
+  }
+  .sidebar a{
+    display: block;
+    margin: .5rem 0;
+    padding: .5rem 0;
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+  }
+  .sidebar a:hover{
+    background-color: white;
+    transition-duration: 0.6s;
+    color: slateblue;
+  }
+  .sidebar .btn-close{
+    position: absolute;
+    top: 0;
+    right: .5rem;
+    margin: 1em .5rem;
+    padding: 1em;
+  }
+   .sidebar .side-nav{
+      margin: 3em 0 0;
+   }
+
+.jumbotron {
+    margin: 5em auto;
+    background-color: slateblue;
+    color: white;
+    text-align: center;
+}
+.jumbotron h1{
+    font-size: 50px;
+}
+.jumbotron .btn-slate {
+    background-color: white;
+    color: slateblue;
+    border: 1px solid slateblue;
+}
+.jumbotron .btn-slate:hover {
+    font-weight: bold;
+    color: slateblue;
+    transition: 0.6s;
+}
+
+/* Media qurey section */
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 850px){
+  nav.navbars .navbar-navs {
+      display: none;
+    }
+   
+   }
+   @media screen and (min-width: 900px){
+    .navbar-section .side-bar-button {
+      display: none;
+    }
+}
